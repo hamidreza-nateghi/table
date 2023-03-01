@@ -6,19 +6,19 @@ const theme = createTheme({
     MuiTableCell: {
       styleOverrides: {
         root: {
+          maxWidth: 24,
           overflow: 'hidden',
           textOverflow: 'ellipsis',
           whiteSpace: 'nowrap',
-          maxWidth: 24,
 
           '&:hover': {
-            position: 'relative',
             overflow: 'visible',
+            position: 'relative',
             zIndex: 1,
 
             '& span': {
-              display: 'inline-block',
               backgroundColor: 'white',
+              display: 'inline-block',
             },
           },
         },
